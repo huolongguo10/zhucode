@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="zhucode.exe" version="1.0.1.5" publicKeyToken="c4593b550d09bb49" language="zh-CN" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Project2.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="zhucode" version="1.0.0.0" publicKeyToken="4DB6DB8B6E81BB84" language="neutral" processorArchitecture="msil" />
+    <commandLine file="zhucode.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC 清单选项
+             如果想要更改 Windows 用户帐户控制级别，请使用
+             以下节点之一替换 requestedExecutionLevel 节点。n
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            指定 requestedExecutionLevel 元素将禁用文件和注册表虚拟化。
+            如果你的应用程序需要此虚拟化来实现向后兼容性，则删除此
+            元素。
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zhucode.exe" size="104976">
+      <assemblyIdentity name="zhucode" version="1.0.0.0" publicKeyToken="4DB6DB8B6E81BB84" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GyKf+CaabVEXIOxddHDtdyZzY2GPNvrA46J4M/q3NKQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Image1.png" size="181686">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dMSeRAmo1JjGh8bKOdQjs5zKfFUbJ1UoT/uowq7Q+SI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Project2.ico" size="46227">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/cGqcDxREODD82JnjS2v73QT935PJdLgDhKNNrCYLOM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="zhucode.exe.config" size="188">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VDy5/VrQni+RSOb/6uEMWMc6bGQEaa2e2UdeWG+KK1I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- 设计此应用程序与其一起工作且已针对此应用程序进行测试的
+           Windows 版本的列表。取消评论适当的元素，
+           Windows 将自动选择最兼容的环境。 -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=WINDOWS-UA3S9UO\Administrator" issuerKeyHash="f124ce1928def306f873ff0125ee1a50b4b0930a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+lNMRo5sRX3NnQIhL5CeWrdVVNpq0UQfP8tTjKm0yEg=</DigestValue></Reference></SignedInfo><SignatureValue>pBIx+25f3e3Y33l+LdyTVe2TZNP9/RElgZyfNjhL3qAZmmFQ4rIThL6mQQCRS7wbIp0GsxRE6sQ5h8GwgCK5sUxT/hA1Lzq5nuvC8cCSh23+hgIlcsiQw6GDAik2Ynl8D+EzFAHVATVO6VB8C/W/4dZDyB62B+p8iinCnGym/30=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>3C0dvcD4G1Ljq++2xLfS+65RwiAxNMj9McDkeE/Z9fQZ2CrFa3IaneocD45VOZ4o/HhA8N7prSzYe4bxVTUPnuZyNgesSaLmwHpEREgVBGnE7tRRgY5ddlFuWtxSzf3chNQPzgjKDTVx/KWo/uhqf/SUtYyJURpH5kun0Atsydk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="48c8b4a98c53cb3f1f44d16ada5455b75a9e902f21029dcd7d456c8e464c53fa" Description="" Url=""><as:assemblyIdentity name="zhucode.exe" version="1.0.1.5" publicKeyToken="c4593b550d09bb49" language="zh-CN" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=WINDOWS-UA3S9UO\Administrator</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>hqBumd32CxWhuqN9W/2Bce8SObsH870KDC0ooHU+e1I=</DigestValue></Reference></SignedInfo><SignatureValue>i8RvuZGJUGM9qSdBZPZruQHrWJX80KXrmQj4bG3drxig2mvTr2aHJcF1bKWm1yndQihK8XyBTaVBxOzkKaavoI4xfpI/M9t6HqVcZvhIt0xWzwGohmL4dy1rThZv/0zKINmfkvYkTDhCYLv9gkTKOsmUbYlYwo4npaLH52bgphA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>3C0dvcD4G1Ljq++2xLfS+65RwiAxNMj9McDkeE/Z9fQZ2CrFa3IaneocD45VOZ4o/HhA8N7prSzYe4bxVTUPnuZyNgesSaLmwHpEREgVBGnE7tRRgY5ddlFuWtxSzf3chNQPzgjKDTVx/KWo/uhqf/SUtYyJURpH5kun0Atsydk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICDTCCAXagAwIBAgIQWyy/RRaJS7JKIW2ECGkr2jANBgkqhkiG9w0BAQsFADBFMUMwQQYDVQQDHjoAVwBJAE4ARABPAFcAUwAtAFUAQQAzAFMAOQBVAE8AXABBAGQAbQBpAG4AaQBzAHQAcgBhAHQAbwByMB4XDTIwMDIyMDEwMTUzNVoXDTIxMDIxOTE2MTUzNVowRTFDMEEGA1UEAx46AFcASQBOAEQATwBXAFMALQBVAEEAMwBTADkAVQBPAFwAQQBkAG0AaQBuAGkAcwB0AHIAYQB0AG8AcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA3C0dvcD4G1Ljq++2xLfS+65RwiAxNMj9McDkeE/Z9fQZ2CrFa3IaneocD45VOZ4o/HhA8N7prSzYe4bxVTUPnuZyNgesSaLmwHpEREgVBGnE7tRRgY5ddlFuWtxSzf3chNQPzgjKDTVx/KWo/uhqf/SUtYyJURpH5kun0AtsydkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQBr01NW23fSbQEbGy0t9YKD3iFFCeeCZLKyJ+0v4wKEEqHHgt5Q7TKWcGbhJBZ3PL4dMQQGzej+GSatt2P4SUUCnbH3ZWgWQqudZVKNazi8w12+s32DcQjuU+0XepVTpjrUreZG/4sp62bilJCH4kOB5Y9hEi87xfR6Kl1wV1k2lw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

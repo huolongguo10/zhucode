@@ -1,0 +1,12 @@
+Dim MyStream As New System.IO.FileStream(Application.StartupPath & "\Ssk.txt", System.IO.FileMode.Create)
+        Dim MyWriter As New System.IO.StreamWriter(MyStream, System.Text.Encoding.Default)
+        MyWriter.WriteLine("AAb")
+        MyWriter.Flush()
+        MyWriter.Close()
+        MyStream.Close()
+
+        '读文本文件
+
+        Dim MyReader As New System.IO.StreamReader(Application.StartupPath & "\Ssk.txt", System.Text.Encoding.UTF8)
+        msgbox( MyReader.ReadToEnd())
+        MyReader.Close()

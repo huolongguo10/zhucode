@@ -1,0 +1,15 @@
+﻿[*.vb]
+
+# IDE1006: 命名样式
+dotnet_diagnostic.IDE1006.severity = none
+
+
+
+# BC42104: 在为变量赋值之前，变量已被使用
+dotnet_diagnostic.BC42104.severity = suggestion
+
+# IDE0055: 修正格式
+dotnet_diagnostic.IDE0055.severity = suggestion
+
+# IDE0059: 不需要赋值
+visual_basic_style_unused_value_assignment_preference = unused_local_variable:warning
